@@ -9,7 +9,7 @@ public class Pub {
     public static final String GT = "gt";
     public static final String BACARDI_SPECIAL = "bacardi_special";
 
-    public int computeCost(String drink, boolean student, int amount) {
+    public int printReceipt(String drink, boolean student, int amount) {
 
         if (amount > 2 && (drink == GT || drink == BACARDI_SPECIAL)) {
             throw new RuntimeException("Too many drinks, max 2.");
@@ -34,6 +34,8 @@ public class Pub {
         if (student && (drink == ONE_CIDER || drink == ONE_BEER || drink == A_PROPER_CIDER)) {
             price = price - price/10;
         }
+        USBPrinter printer = new USBPrinter("/dev/ttyUSB0");
+        printer.print(drink, student, amount, price*amount);
         return price*amount;
     }
 
