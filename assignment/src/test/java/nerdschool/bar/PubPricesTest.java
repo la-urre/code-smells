@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class PubPricesTest {
     @Test
-    public void it() {
+    void it() {
         
     }
 
