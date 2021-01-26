@@ -1,6 +1,6 @@
 package nerdschool.bar;
 
-public class USBPrinter {
+public class USBPrinter implements Printer {
     private final String port;
 
     public USBPrinter(String port) {

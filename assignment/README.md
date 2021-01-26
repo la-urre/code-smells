@@ -1,6 +1,6 @@
 # Fix the smelly code
 
-Form groups of about 3 people and review Pub.java in nerdschool.bar. Which code smells can you find? Refactor to remove smell(s). There is a small test suite (nerdschool.bar.PubPricesTest.java)
+Form groups of about 3 people and review Pub.java in nerdschool.bar. Which code smells can you find? Refactor to remove smell(s). There is a small test suite (nerdschool.bar.PubTest.java)
 that will help you along the way. Introduce more tests if you need them.
 
 
